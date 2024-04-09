@@ -80,10 +80,11 @@ export default function Home() {
                   : <Image source={trashCan} alt=''style={styles.image}/>
               }
             </TouchableOpacity>
+
           </View>
         )}
+        ListEmptyComponent={<NoTask />}
       />
-      {/* <NoTask /> */}
     </View>
   );
 }
